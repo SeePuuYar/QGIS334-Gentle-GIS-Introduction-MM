@@ -85,8 +85,30 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">အသုံးပြုသူများအတွက်</span></p>
 <ul>
-<li class="toctree-l1"><a href="https://seepuuyar.github.io/QGIS328-Manual-MM/docs/user_manual/index.html">QGIS Desktop အသုံးပြုသူလမ်းညွှန်/လက်စွဲ (QGIS 3.28)</a></li>
-<li class="toctree-l1"><a href="https://seepuuyar.github.io/QGIS334-Training-Manual-MM/docs/training_manual/index.html">QGIS သင်တန်းလက်စွဲ</a></li>
+<li class="toctree-l1"><a id=myLink1 href="">QGIS3.28 Desktop အသုံးပြုသူလမ်းညွှန်/လက်စွဲ</a></li>
+<li class="toctree-l1"><a id=myLink2 href="">QGIS3.34 GIS သင်တန်း လက်စွဲ</a></li>
+<script>
+	function dynamicLinks(){
+		var currentDomain = window.location.hostname;
+
+		// Select the link element you want to change
+		var linkElement1 = document.getElementById('myLink1');
+		var linkElement2 = document.getElementById('myLink2');
+
+		// Check the domain and switch the href accordingly
+		if (currentDomain === 'seepuuyar.github.io') {
+			linkElement1.href = 'https://seepuuyar.github.io/QGIS328-Manual-MM/docs/user_manual/index.html';
+			linkElement2.href = 'https://seepuuyar.github.io/QGIS334-Training-Manual-MM/docs/training_manual/index.html';
+		} else if (currentDomain === 'seepuuyar.com') {
+			linkElement1.href = 'https://seepuuyar.com/QGIS328_Manual_MM/docs/user_manual/index.html';
+			linkElement2.href = 'https://seepuuyar.com/QGIS334_Training_Manual_MM/docs/training_manual/index.html';
+		} else {
+			linkElement1.href = '../../QGIS328_Manual_MM/docs/user_manual/index.html';
+			linkElement2.href = '../../QGIS334_Training_Manual_MM/docs/training_manual/index.html';
+		}
+	};
+    dynamicLinks() 
+</script>
 <li class="toctree-l1"><a class="reference internal" href="gentle_gis_introduction/index.html">GIS မိတ်ဆက်</a></li>
 </ul>
 
@@ -118,8 +140,8 @@
              
   <blockquote>
 <div></div></blockquote>
-<section id="qgis-3-28-documentation">
-<h1>QGIS 3.28 အတွက် မှတ်တမ်းပြုစုခြင်း (Documentation)<a class="headerlink" href="#qgis-3-28-documentation" title="Link to this heading"></a></h1>
+<section id="qgis-training-manual">
+<h1>QGIS 3.34 GIS မိတ်ဆက် (Gentle GIS Introduction)<a class="headerlink" href="#qgis-qgis-training-manual" title="Link to this heading"></a></h1>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>testing Long Term Release ထက် ပိုအသစ်ဖြစ်သော ဗားရှင်းကို ရှာဖွေနေပါသလား။ <a class="reference external" href="https://docs.qgis.org/testing/en/">testing docs</a> တွင် ကြည့်ရှုပါ။</p>
