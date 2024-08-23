@@ -49,27 +49,13 @@
       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
 	// Get the current domain
-	var currentDomain = window.location.hostname;
-
-	// Select the link element you want to change
-	var linkElement1 = document.getElementById('myLink1');
-	var linkElement2 = document.getElementById('myLink2');
-
-	// Check the domain and switch the href accordingly
-	if (currentDomain === 'seepuuyar.github.io') {
-		linkElement1.href = 'https://seepuuyar.github.io/QGIS328-Manual-MM/docs/user_manual/index.html';
-		linkElement2.href = 'https://seepuuyar.github.io/QGIS334-Training-Manual-MM/docs/training_manual/index.html';
-	} else if (currentDomain === 'seepuuyar.com') {
-		linkElement1.href = 'https://seepuuyar.com/QGIS328_Manual_MM/docs/user_manual/index.html';
-		linkElement2.href = 'https://seepuuyar.com/QGIS334_Training_Manual_MM/docs/training_manual/index.html';
-	} else {
-		linkElement1.href = 'https://defaultdomain.com/default-page';
-	}
+	
 
   </script>
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" onload="dynamicLinks()">
+
 
   <nav class="release_status_topbar">
   </nav>
@@ -104,9 +90,31 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">အသုံးပြုသူများအတွက်</span></p>
 <ul class="current">
-<li class="toctree-l1"><a id="mmLink1" href="">QGIS Desktop အသုံးပြုသူလမ်းညွှန်/လက်စွဲ (QGIS 3.28)</a></li>
-<li class="toctree-l1"><a  href="">QGIS3.34 GIS သင်တန်း လက်စွဲ</a></li>
-<li class="toctree-l1 currid="myLink2" ent"><a class="current reference internal" href="#">GIS မိတ်ဆက်</a><ul>
+<li class="toctree-l1"><a id="myLink1" href="0">QGIS Desktop အသုံးပြုသူလမ်းညွှန်/လက်စွဲ (QGIS 3.28)</a></li>
+<li class="toctree-l1"><a id="myLink2" href="0">QGIS3.34 GIS သင်တန်း လက်စွဲ</a></li>
+<script>
+	function dynamicLinks(){
+		var currentDomain = window.location.hostname;
+
+		// Select the link element you want to change
+		var linkElement1 = document.getElementById('myLink1');
+		var linkElement2 = document.getElementById('myLink2');
+
+		// Check the domain and switch the href accordingly
+		if (currentDomain === 'seepuuyar.github.io') {
+			linkElement1.href = 'https://seepuuyar.github.io/QGIS328-Manual-MM/docs/user_manual/index.html';
+			linkElement2.href = 'https://seepuuyar.github.io/QGIS334-Training-Manual-MM/docs/training_manual/index.html';
+		} else if (currentDomain === 'seepuuyar.com') {
+			linkElement1.href = 'https://seepuuyar.com/QGIS328_Manual_MM/docs/user_manual/index.html';
+			linkElement2.href = 'https://seepuuyar.com/QGIS334_Training_Manual_MM/docs/training_manual/index.html';
+		} else {
+			linkElement1.href = '../../QGIS328_Manual_MM/docs/user_manual/index.html';
+			linkElement2.href = '../../QGIS334_Training_Manual_MM/docs/training_manual/index.html';
+		}
+	};
+    dynamicLinks() 
+</script>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GIS မိတ်ဆက်</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="preamble.html">1. စကားချီး (Preamble)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="introducing_gis.html">2. GIS မိတ်ဆက် (Introducing GIS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector_data.html">3. Vector ဒေတာများ (Vector Data)</a></li>
