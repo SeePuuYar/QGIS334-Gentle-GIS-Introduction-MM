@@ -13,4 +13,3 @@
 
 
  ![qgis manual](/_images/zz_qgis_gentle_gis_intro.png)
-
