@@ -8,9 +8,8 @@
 ၏ မူရင်း [ReStructuredText (rst) file များ](https://github.com/qgis/QGIS-Documentation/tree/master/docs/gentle_gis_introduction)ကို CDE Myanmar ၏အကူအညီအထောက်အပံ့ဖြင့် ဘာသာပြန်ဆိုကာ  html စာမျက်နှာများအဖြစ် ထုတ်လုပ်ထားခြင်းဖြစ်ပါသည်။
  
 ဤ မြန်မာပြန် လက်စွဲကို webpage အဖြစ် အောက်ပါနေရာများ တွင် ထုတ်လွှင့်ထားပါသည် ..
- - [https://www.seepuuyar.com/qgis334_training_manual_mm/docs/](https://www.seepuuyar.com/qgis334_training_manual_mm/docs/) နှင့်
- - [https://seepuuyar.github.io/qgis334-training-manual-mm/docs/](https://seepuuyar.github.io/QGIS334-Training-Manual-MM/docs/) တွင်ဖတ်ရှုနိုင်ပါသည်
+ - [https://www.seepuuyar.com/qgis334_gentle_gis_introduction_mm/docs/](https://www.seepuuyar.com/qgis334_gentle_gis_introduction_mm/docs/) နှင့်
+ - [https://seepuuyar.github.io/qgis334-gentle-gis-introduction-mm/docs/](https://seepuuyar.github.io/QGIS334-Gentle-GIS-Introduction-MM/docs/) တွင်ဖတ်ရှုနိုင်ပါသည်
 
 
  ![qgis manual](/_images/zz_qgis_gentle_gis_intro.png)
-
